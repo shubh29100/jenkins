@@ -32,6 +32,9 @@ resource "aws_instance" "my_project_instance" {
     }
   }
 
+
+  #hello there!!!!
+
   tags = {
     Name = "MyProjectInstance"
   }
