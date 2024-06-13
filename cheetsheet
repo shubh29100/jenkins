@@ -1,0 +1,5 @@
+alternatives --config java  #to set which version we want to set for execution 
+
+#sonarqube 
+
+it is used for quality analysis 
