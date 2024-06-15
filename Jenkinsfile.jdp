@@ -16,6 +16,11 @@ pipeline {
                 withSonarQubeEnv(installationName: 'sonar', credentialsId: 'sonar-creds') {
                 sh '/opt/maven/bin/mvn sonar:sonar'
                 }
+            } 
+        } 
+        stage ('QualityGate') {
+            steps {
+                waitForQualityGate abortPipeline: true
             }
         }
         stage('Deploy') {
