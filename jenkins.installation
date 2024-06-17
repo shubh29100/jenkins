@@ -15,3 +15,12 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo \
     sudo systemctl enable jenkins 
 
     sudo systemctl start jenkins
+
+
+----apache server-----
+<role rolename="manager-gui"/>
+ 57           <role rolename="manager-script"/>
+ 58           <role rolename="manager-jmx"/>
+ 59           <role rolename="manager-status"/>
+ 60           <role rolename="user-gui"/>
+ 61           <user username="linux" password="redhat" roles="manager-gui,manager-script,manager-jmx,manager-status,user-gui"/>
